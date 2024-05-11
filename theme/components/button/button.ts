@@ -8,6 +8,12 @@ export const Button = MantineButton.extend({
   defaultProps: {
     size: 'sm',
   },
+  styles: {
+    root: {
+      '--button-fz': rem(14),
+    },
+  },
+
   vars: (_, props) => {
     if (props.size === 'md') {
       return {
@@ -15,7 +21,6 @@ export const Button = MantineButton.extend({
           '--button-height': rem(40),
           '--button-padding-x': rem(20),
           '--button-padding-y': rem(10),
-          '--button-fz': rem(14),
         },
       }
     }
@@ -26,7 +31,6 @@ export const Button = MantineButton.extend({
           '--button-height': rem(32),
           '--button-padding-x': rem(20),
           '--button-padding-y': rem(6),
-          '--button-fz': rem(14),
         },
       }
     }
