@@ -1,9 +1,15 @@
-import { Button } from '@mantine/core'
+import { MoviesPageWrapper } from '../components/movies-page-wrapper'
+import { Sidebar } from '../components/sidebar'
+import { Header } from '../components/header'
+import { Footer } from '../components/footer/footer'
 
-export default function HomePage() {
+export default function MoviePage() {
   return (
-    <div>
-      <Button>Save</Button>
-    </div>
+    <MoviesPageWrapper
+      header={<Header title="Movies" />}
+      aside={<Sidebar />}
+      main={<div>MAIN</div>}
+      footer={<Footer />}
+    />
   )
 }

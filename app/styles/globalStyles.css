@@ -15,4 +15,9 @@
   --clr-purple-200: #e5d5fa;
   --clr-purple-100: #f2ebf9;
   --clr-yellow: #fab005;
+
+  /* layout */
+
+  --aside-width: 280px;
+  --footer-height: 114px;
 }
