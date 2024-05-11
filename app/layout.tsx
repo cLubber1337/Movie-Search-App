@@ -1,12 +1,13 @@
-import "@mantine/core/styles.css";
-import React from "react";
-import { MantineProvider, ColorSchemeScript } from "@mantine/core";
-import { theme } from "../theme";
+import '@mantine/core/styles.css'
+import './globalStyles.css'
+import React from 'react'
+import { MantineProvider, ColorSchemeScript } from '@mantine/core'
+import { theme } from '../theme/theme'
 
 export const metadata = {
-  title: "Mantine Next.js template",
-  description: "I am using Mantine with Next.js!",
-};
+  title: 'Movie Search App',
+  description: 'Find movies and series with ease!',
+}
 
 export default function RootLayout({ children }: { children: any }) {
   return (
@@ -19,9 +20,10 @@ export default function RootLayout({ children }: { children: any }) {
           content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no"
         />
       </head>
+
       <body>
         <MantineProvider theme={theme}>{children}</MantineProvider>
       </body>
     </html>
-  );
+  )
 }

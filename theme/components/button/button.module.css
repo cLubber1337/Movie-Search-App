@@ -1,0 +1,17 @@
+/* .button {
+  transition: all 0.25ms ease;
+
+  background-color: var(--clr-purple-main-500);
+
+  &:hover {
+    background-color: var(--clr-purple-400);
+  }
+
+  &:active {
+    background-color: var(--clr-purple-600);
+  }
+
+  &:disabled {
+    background-color: var(--clr-grey-600);
+  }
+} */
